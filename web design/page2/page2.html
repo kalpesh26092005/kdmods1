@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and registration form</title>
+      <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="hero">
+                <div class="navbar">
+                <img src="LOGO.jpg" class="logo">
+                <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Mods</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#">Support</a></li>
+                </ul>
+                </div>
+            <div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+                       <button type="button" class="toggle-btm" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btm" onclick="register()">Register</button>
+                </div>
+ <div class="social-icons">
+            <a href=""><img src="twitter.webp"></a>
+            <a href="https://www.facebook.com/dilip.dukhande.1?mibextid=ZbWKwL"><img src="facebook1.webp"></a>    
+            <a href="https://www.instagram.com/i_am_kalpesh26?igsh=bWxnbjlseTk3MnV6"><img src="instagram.webp"></a>
+            </div>
+                         <form id="login" class="input-group">
+                       <input type="text" class="input-field" placeholder="user id" required>
+                       <input type="password" class="input-field" placeholder="Enter Password" required>
+                       <input type="checkbox" class="check-box"><span>remember password</span>
+                       <input type="button" class="submit-btn" value="Log In">
+                </form>
+                          <form id="register" class="input-group" action="connect.php" method="post">
+                       <input type="text" class="input-field" placeholder="User id" name="user_id" required>
+                       <input type="email" class="input-field" placeholder="Email Id" name="email" required>
+                          <input type="password" class="input-field" placeholder="password" name="password" required>
+                       <input type="checkbox" class="check-box"><span>I agree with terms and conditions</span>
+                       <input type="button" class="submit-btn" value="Register">
+                </form>
+
+        </div>
+
+
+           </div>
+ <script>
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn");
+        function register(){
+            x.style.left ="-400px";
+            y.style.left ="50px";
+            z.style.left ="110px";
+        }
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px";
+            z.style.left ="0";
+        }
+
+</script>
+          </body>
+</html>
+        
+        
+           
